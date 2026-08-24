@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Portfolio | Eduardo Martin Muñoz</title>
-  <meta name="description" content="Portfolio de Eduardo Martin Muñoz, Estudiante de Ingeniería Informática especializado en TI.">
+  <meta name="description" content="Portfolio de Eduardo Martin Muñoz, Ingeniero Informático especializado en TI.">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -14,39 +14,72 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- ESTILOS PERSONALIZADOS: Profesionalización visual -->
+  <style>
+    :root {
+      --primary-accent: #0d6efd; /* Azul Tecnológico */
+      --secondary-accent: #0b5ed7;
+      --card-bg: #1a1e23;
+    }
+    
+    /* Efectos hover para proyectos */
+    .portfolio-card {
+      background-color: var(--card-bg) !important;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      border: 1px solid #2d3238 !important;
+      overflow: hidden;
+    }
+    .portfolio-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+      border-color: var(--primary-accent) !important;
+    }
+    .portfolio-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 2px solid #2d3238;
+    }
+    
+    /* Destacar iconos y títulos */
+    .icon-wrapper i { color: var(--primary-accent) !important; }
+    .section-title h2 { color: var(--primary-accent) !important; }
+    .badge.bg-secondary { background-color: #2b3035 !important; border: 1px solid #495057; }
+    
+    /* Botones profesionales */
+    .btn-primary { background-color: var(--primary-accent) !important; border: none !important; }
+    .btn-primary:hover { background-color: var(--secondary-accent) !important; }
+  </style>
 </head>
 
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <h1 class="sitename">Eduardo M.</h1>
       </a>
-
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Inicio</a></li>
           <li><a href="#about">Sobre Mí</a></li>
-          <li><a href="#resume">Currículum</a></li>
+          <li><a href="#resume">Trayectoria</a></li>
           <li><a href="#portfolio">Proyectos</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
     </div>
   </header>
 
@@ -54,15 +87,13 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-      <!-- Cambia profile-bg-5.webp por una foto tuya de fondo o deja la plantilla -->
       <img src="assets/img/profile/profile-bg-5.webp" alt="" data-aos="fade-in">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
             <h2>¡Hola! Soy Eduardo Martin Muñoz</h2>
-            <p><span class="typed" data-typed-items="Ingeniero Informático en formación, Especialista en TI, Apasionado por la tecnología"></span><span class="typed-cursor" aria-hidden="true"></span></p>
-            <div class="social-links">
+            <p><span class="typed" data-typed-items="Ingeniero Informático, Especialista en Tecnologías de la Información, Desarrollador de Software"></span><span class="typed-cursor" aria-hidden="true"></span></p>
+            <div class="social-links mt-4">
               <a href="https://github.com/edumtn" target="_blank"><i class="bi bi-github"></i></a>
               <a href="https://linkedin.com/in/TU-LINKEDIN" target="_blank"><i class="bi bi-linkedin"></i></a>
               <a href="mailto:edumarmu2003@gmail.com"><i class="bi bi-envelope"></i></a>
@@ -76,8 +107,8 @@
     <section id="about" class="about section">
       <div class="container section-title" data-aos="fade-up">
         <span class="subtitle">Conóceme</span>
-        <h2>Sobre Mí</h2>
-        <p>Curiosidad técnica, adaptabilidad intercultural y enfoque práctico orientado a resultados.</p>
+        <h2>Perfil Profesional</h2>
+        <p>Soluciones eficientes, arquitecturas robustas y enfoque orientado a negocio.</p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -87,14 +118,13 @@
               <div class="profile-header">
                 <div class="profile-avatar">
                   <img src="assets/img/profile/profile-square-3.webp" class="img-fluid" alt="Eduardo Martin">
-                  <div class="status-indicator"></div>
                 </div>
                 <h3>Eduardo Martin Muñoz</h3>
-                <span class="role">IT & Software Engineering</span>
+                <span class="role">Ingeniero Informático (TI)</span>
               </div>
-
               <div class="profile-actions mt-4">
-                <a href="#contact" class="btn-primary w-100 mb-2"><i class="bi bi-envelope"></i> Contactar</a>
+                <!-- Ideal enlazar a un PDF real aquí -->
+                <a href="#" class="btn-primary w-100 mb-2"><i class="bi bi-file-earmark-pdf"></i> Descargar CV</a>
               </div>
             </div>
           </div>
@@ -102,216 +132,45 @@
           <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
             <div class="content-wrapper">
               <div class="bio-section">
-                <div class="section-tag">Perfil Profesional</div>
-                <h2>Transformando problemas reales en soluciones digitales</h2>
-                <p>Soy un estudiante de Ingeniería Informática apasionado por las nuevas tecnologías y el aprendizaje continuo. Me caracteriza un enfoque práctico orientado a la resolución de problemas, buscando siempre la forma más óptima de integrar sistemas y automatizar procesos.</p>
-                <p>Disfruto enfrentándome a retos técnicos que me exijan salir de mi zona de confort, una adaptabilidad que también aplico en mi vida personal a través de mi pasión por la naturaleza y los viajes. Actualmente busco oportunidades que ayuden a mi desarrollo de conocimientos aportando valor desde el primer día.</p>
+                <h2>Aportando valor mediante la tecnología</h2>
+                <p>Estudiante de último año de Ingeniería Informática con sólida base técnica en desarrollo de software, gestión de bases de datos relacionales y monitorización de sistemas industriales. Acostumbrado a resolver problemas complejos aplicando lógica estructural e innovación tecnológica.</p>
+                <p>Mi experiencia internacional y mi capacidad para adaptarme a nuevas arquitecturas me permiten integrarme rápidamente en equipos multidisciplinares, buscando siempre optimizar procesos y garantizar la escalabilidad de las soluciones.</p>
               </div>
 
               <div class="details-grid mt-4">
-                <div class="detail-item" data-aos="fade-up" data-aos-delay="250">
-                  <i class="bi bi-mortarboard"></i>
+                <div class="detail-item">
+                  <i class="bi bi-translate"></i>
                   <div class="detail-content">
-                    <span>Grado</span>
-                    <strong>Ingeniería Informática</strong>
+                    <span>Idiomas</span>
+                    <strong>Inglés (B2) | Italiano (A2)</strong>
                   </div>
                 </div>
-                <div class="detail-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="detail-item">
                   <i class="bi bi-geo-alt"></i>
                   <div class="detail-content">
                     <span>Ubicación</span>
-                    <strong>Puertollano, España</strong>
-                  </div>
-                </div>
-                <div class="detail-item" data-aos="fade-up" data-aos-delay="350">
-                  <i class="bi bi-envelope"></i>
-                  <div class="detail-content">
-                    <span>Email</span>
-                    <strong>edumarmu2003@gmail.com</strong>
-                  </div>
-                </div>
-                <div class="detail-item" data-aos="fade-up" data-aos-delay="100">
-                  <i class="bi bi-calendar-check"></i>
-                  <div class="detail-content">
-                    <span>Disponibilidad</span>
-                    <strong>Buscando oportunidades</strong>
+                    <strong>Disponibilidad de traslado</strong>
                   </div>
                 </div>
               </div>
 
-              <div class="skills-showcase mt-5" data-aos="fade-up" data-aos-delay="250">
-                <div class="section-tag">Tech Stack</div>
-                <h3>Competencias Técnicas</h3>
-
-                <div class="skills-list skills-animation">
+              <div class="skills-showcase mt-5">
+                <h3>Core Tech Stack</h3>
+                <div class="skills-list skills-animation mt-3">
                   <div class="skill-item">
-                    <div class="skill-info">
-                      <span class="skill-name">Java / C / C++</span>
-                      <span class="skill-percent">90%</span>
-                    </div>
+                    <div class="skill-info"><span class="skill-name">C / C++ / Java</span><span class="skill-percent">90%</span></div>
                     <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
                   </div>
                   <div class="skill-item">
-                    <div class="skill-info">
-                      <span class="skill-name">Bases de Datos (SQL / Oracle / MySQL)</span>
-                      <span class="skill-percent">90%</span>
-                    </div>
+                    <div class="skill-info"><span class="skill-name">Oracle SQL / MySQL / InfluxDB</span><span class="skill-percent">90%</span></div>
                     <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
                   </div>
                   <div class="skill-item">
-                    <div class="skill-info">
-                      <span class="skill-name">Python & Machine Learning</span>
-                      <span class="skill-percent">85%</span>
-                    </div>
+                    <div class="skill-info"><span class="skill-name">Python & Data Analytics</span><span class="skill-percent">85%</span></div>
                     <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div></div>
                   </div>
-                  <div class="skill-item">
-                    <div class="skill-info">
-                      <span class="skill-name">C# & .NET</span>
-                      <span class="skill-percent">75%</span>
-                    </div>
-                    <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div></div>
-                  </div>
-                  <div class="skill-item">
-                    <div class="skill-info">
-                      <span class="skill-name">Sistemas (Linux, InfluxDB, Grafana)</span>
-                      <span class="skill-percent">75%</span>
-                    </div>
-                    <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div></div>
-                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-      <div class="container section-title" data-aos="fade-up">
-        <span class="subtitle">Trayectoria</span>
-        <h2>Currículum</h2>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-5">
-          
-          <div class="col-lg-6">
-            <div class="education-section">
-              <div class="section-header" data-aos="fade-left" data-aos-delay="200">
-                <div class="header-content">
-                  <span class="section-badge">Formación</span>
-                  <h2>Historial Académico</h2>
-                </div>
-              </div>
-              <div class="education-timeline" data-aos="fade-left" data-aos-delay="300">
-                <div class="timeline-track">
-                  
-                  <div class="timeline-item">
-                    <div class="timeline-marker"><i class="bi bi-globe"></i></div>
-                    <div class="timeline-content">
-                      <div class="education-meta">
-                        <span class="year-range">2025 - 2026</span>
-                      </div>
-                      <h4>Programa de Intercambio Erasmus+</h4>
-                      <p class="institution">Politechnika Częstochowska (Polonia)</p>
-                      <p class="description">Acuerdo académico internacional. Asignaturas cursadas en inglés, fortaleciendo el desarrollo intercultural y la adaptación a nuevos entornos.</p>
-                    </div>
-                  </div>
-
-                  <div class="timeline-item">
-                    <div class="timeline-marker"><i class="bi bi-mortarboard-fill"></i></div>
-                    <div class="timeline-content">
-                      <div class="education-meta">
-                        <span class="year-range">2022 - Actualidad</span>
-                      </div>
-                      <h4>Grado en Ingeniería Informática</h4>
-                      <p class="institution">Escuela Superior de Informática (UCLM)</p>
-                      <p class="description">Especialización en Tecnologías de la Información (TI). Formación sólida en estructuras de datos, algoritmia y arquitectura de sistemas.</p>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="experience-section">
-              <div class="section-header" data-aos="fade-right" data-aos-delay="200">
-                <div class="header-content">
-                  <span class="section-badge">Experiencia</span>
-                  <h2>Trayectoria Profesional</h2>
-                </div>
-              </div>
-              <div class="experience-cards">
-                
-                <div class="exp-card featured" data-aos="zoom-in" data-aos-delay="300">
-                  <div class="card-header">
-                    <div class="company-logo"><i class="bi bi-laptop"></i></div>
-                  </div>
-                  <div class="card-body">
-                    <h3>Desarrollador y Monitorización de Sistemas (Prácticas)</h3>
-                    <p class="company-name">ISFOC (Instituto de Sistemas Fotovoltaicos de Concentración)</p>
-                    <p class="description">Desarrollo de un sistema de telemetría en Python desplegado en Raspberry Pi para la extracción automatizada de datos energéticos y monitorización mediante bases de datos de series temporales (InfluxDB) y Grafana.</p>
-                  </div>
-                </div>
-
-                <div class="exp-card" data-aos="zoom-in" data-aos-delay="350">
-                  <div class="card-header">
-                    <div class="company-logo"><i class="bi bi-people"></i></div>
-                  </div>
-                  <div class="card-body">
-                    <h3>Experiencia Complementaria</h3>
-                    <p class="company-name">Sector Servicios y Logística</p>
-                    <p class="description">Desempeño en roles de atención al público (hostelería) y trabajo en equipo bajo presión (logística). Esta etapa ha forjado disciplina, responsabilidad y una sólida ética laboral.</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Soft Skills Section -->
-    <section id="services" class="services section">
-      <div class="container section-title" data-aos="fade-up">
-        <span class="subtitle">Competencias</span>
-        <h2>Soft Skills</h2>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="service-item">
-              <div class="icon-wrapper"><i class="bi bi-chat-dots"></i></div>
-              <h4>Buena Comunicación</h4>
-              <p>Capacidad para transmitir ideas técnicas con claridad y coordinarme efectivamente con el equipo de trabajo.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="service-item featured">
-              <div class="icon-wrapper"><i class="bi bi-arrow-repeat"></i></div>
-              <h4>Trabajo Progresivo</h4>
-              <p>Constancia, organización metódica y enfoque en la entrega continua de resultados fiables.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-            <div class="service-item">
-              <div class="icon-wrapper"><i class="bi bi-globe"></i></div>
-              <h4>Adaptabilidad</h4>
-              <p>Facilidad para integrarme en nuevos entornos técnicos, stacks de herramientas o contextos culturales.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="service-item">
-              <div class="icon-wrapper"><i class="bi bi-lightning"></i></div>
-              <h4>Proactividad</h4>
-              <p>Disposición absoluta para investigar de forma autónoma, proponer mejoras y superar bloqueos.</p>
             </div>
           </div>
         </div>
@@ -326,145 +185,58 @@
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+        <div class="row gy-4">
           
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-            
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <div class="portfolio-card p-4 border rounded bg-dark text-light">
-                  <h4>🔌 Telemetría Industrial (ISFOC)</h4>
-                  <p class="mt-3">Extracción automatizada de datos energéticos (IEC 60870-5-102) en plantas solares. Almacenamiento en InfluxDB y detección de anomalías.</p>
-                  <div class="project-tags mt-3">
-                    <span class="badge bg-secondary">Python</span>
-                    <span class="badge bg-secondary">Raspberry Pi</span>
-                    <span class="badge bg-secondary">Grafana</span>
-                  </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <div class="portfolio-card p-4 border rounded bg-dark text-light">
-                  <h4>🧠 Inteligencia Artificial</h4>
-                  <p class="mt-3">Modelo basado en redes neuronales para análisis predictivo. Incluye limpieza de datos, entrenamiento y evaluación de precisión.</p>
-                  <div class="project-tags mt-3">
-                    <span class="badge bg-secondary">TensorFlow</span>
-                    <span class="badge bg-secondary">Scikit-learn</span>
-                    <span class="badge bg-secondary">Pandas</span>
-                  </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <div class="portfolio-card p-4 border rounded bg-dark text-light">
-                  <h4>🗄️ BBDD Residencias</h4>
-                  <p class="mt-3">Diseño de una base de datos relacional robusta. Incluye esquemas complejos, triggers y automatización de procesos internos mediante procedimientos.</p>
-                  <div class="project-tags mt-3">
-                    <span class="badge bg-secondary">Oracle SQL</span>
-                    <span class="badge bg-secondary">PL/SQL</span>
-                  </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <div class="portfolio-card p-4 border rounded bg-dark text-light">
-                  <h4>🎉 CELEBRAIT</h4>
-                  <p class="mt-3">Plataforma integral para planificación de eventos y festivales. Permite administrar usuarios, recintos, horarios y venta de entradas.</p>
-                  <div class="project-tags mt-3">
-                    <span class="badge bg-secondary">Java</span>
-                    <span class="badge bg-secondary">Spring Boot</span>
-                    <span class="badge bg-secondary">MySQL</span>
-                  </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <div class="portfolio-card p-4 border rounded bg-dark text-light">
-                  <h4>👁️ Visión Artificial</h4>
-                  <p class="mt-3">Análisis de imágenes, detección de formas (espacio HSV) y sistemas de reconocimiento facial utilizando análisis de componentes principales.</p>
-                  <div class="project-tags mt-3">
-                    <span class="badge bg-secondary">MATLAB</span>
-                    <span class="badge bg-secondary">PCA</span>
-                  </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <div class="portfolio-card p-4 border rounded bg-dark text-light">
-                  <h4>🏸 Gestión Bádminton</h4>
-                  <p class="mt-3">Aplicación para gestión de torneos, emparejamiento de jugadores y registro de puntuaciones con generación de clasificaciones.</p>
-                  <div class="project-tags mt-3">
-                    <span class="badge bg-secondary">C#</span>
-                    <span class="badge bg-secondary">.NET</span>
-                    <span class="badge bg-secondary">SQL Server</span>
-                  </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-      <div class="container section-title" data-aos="fade-up">
-        <span class="subtitle">Contacto</span>
-        <h2>¿Hablamos?</h2>
-      </div>
-
-      <div class="container">
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-6">
-            <div class="info-item">
-              <div class="icon-wrapper"><i class="bi bi-geo-alt"></i></div>
-              <div>
-                <h3>Ubicación</h3>
-                <p>Puertollano, Ciudad Real (España)</p>
-              </div>
-            </div>
-            <div class="info-item mt-4">
-              <div class="icon-wrapper"><i class="bi bi-envelope"></i></div>
-              <div>
-                <h3>Email</h3>
-                <p>edumarmu2003@gmail.com</p>
+          <!-- Proyecto 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-card rounded text-light h-100">
+              <!-- Cambiar el src por capturas reales de tus proyectos -->
+              <img src="assets/img/portfolio/app1.jpg" alt="Telemetría" onerror="this.src='https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800'">
+              <div class="p-4">
+                <h4>🔌 Telemetría Industrial</h4>
+                <p class="mt-3 text-muted">Extracción automatizada de datos energéticos (IEC 60870-5-102) en plantas solares. Monitorización SCADA con Grafana.</p>
+                <div class="project-tags mt-3">
+                  <span class="badge bg-secondary">Python</span>
+                  <span class="badge bg-secondary">Raspberry Pi</span>
+                  <span class="badge bg-secondary">Grafana</span>
+                </div>
               </div>
             </div>
           </div>
+
+          <!-- Proyecto 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-card rounded text-light h-100">
+              <img src="assets/img/portfolio/app2.jpg" alt="IA" onerror="this.src='https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=800'">
+              <div class="p-4">
+                <h4>🧠 Modelos Predictivos (IA)</h4>
+                <p class="mt-3 text-muted">Desarrollo de redes neuronales para análisis inteligente de datos financieros, incluyendo preprocesamiento y evaluación.</p>
+                <div class="project-tags mt-3">
+                  <span class="badge bg-secondary">TensorFlow</span>
+                  <span class="badge bg-secondary">Pandas</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-card rounded text-light h-100">
+              <img src="assets/img/portfolio/app3.jpg" alt="BBDD" onerror="this.src='https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&q=80&w=800'">
+              <div class="p-4">
+                <h4>🗄️ Arquitectura Relacional</h4>
+                <p class="mt-3 text-muted">Diseño de base de datos para residencias. Implementación de esquemas complejos, triggers y paquetes almacenados.</p>
+                <div class="project-tags mt-3">
+                  <span class="badge bg-secondary">Oracle SQL</span>
+                  <span class="badge bg-secondary">PL/SQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
-
   </main>
-
-  <footer id="footer" class="footer">
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Eduardo Martin</strong> <span>Todos los derechos reservados.</span></p>
-      <div class="credits">
-        Diseñado con <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>
